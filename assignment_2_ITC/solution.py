@@ -1,0 +1,83 @@
+# QUESTION 1
+print("QUESTION 1")
+s1="Python is a case sensitive language"
+print("A    The length of string is             ",len(s1)) 
+print("B    The reversed string is              ",s1[-1::-1])
+# STORED a case sensitive IN A NEW STRING #c
+s2=s1[10:26] 
+#REPLACED "a csae sensitive" with "object oriented"  #D
+s2="Object Oriented" 
+print("E    index of a is                       ",s1.find('a'))
+print("F    string after removing whitespaces   ",s1.replace(" ",""))
+print("\n \n \n")
+
+
+
+#QUESTION 2
+print("QUESTION 2")
+name=input("ENTER YOUR name                 ")
+SID=input("ENTER YOUR SID                  ")
+department=input("ENTER YOUR department           ")
+CGPA=input("ENTER YOUR CGPA                 ")
+print("Hey,",name,"Here!")
+print("My SID is ",SID)
+print("I am from ",department,"and my CGPA is ",CGPA)
+print("\n \n \n")
+
+
+
+#QUESTION 3
+print("QUESTION 3")
+a=56
+b=10
+print("A    a&b    ",a&b)
+print("B    a|b    ",a|b)
+print("C    a^b    ",a^b)
+print("D Left shift of a 2 bits \n            ",a<<2) 
+print("D Left shift of b 2 bits \n            ",b<<2) 
+
+print("E    Right shift a with 2 bits \n            ",a>>2)
+print("E    Right shift b with 4 bits \n            ",b>>4)
+print("\n \n \n")
+
+
+#QUESTION 4
+print("QUESTION 4")
+n1 = int(input("Enter first number:         "))
+n2 = int(input("Enter second number:        "))
+n3 = int(input("Enter third number:         "))
+
+if (n1 >= n2) and (n1 >= n3):
+   largest = n1
+elif (n2 >= n1) and (n2 >= n3):
+   largest = n2
+else:
+   largest = n3
+
+print("THE LARGEST NUMBER IS        ",largest)
+print("\n \n \n")
+
+
+#QUESTION 5
+print("QUESTION 5")
+s=input("Enter the string ")
+if (s.find('name') != -1):
+    print ("Yes")
+else:
+    print ("No")
+print("\n  \n \n")
+
+#QUESTION 6
+print("QUESTION 6")
+a=int(input("Enter  first side of triangle "))
+b=int(input("Enter  second side of triangle "))
+c=int(input("Enter  third side of triangle "))
+if(a>=(b+c)):
+    print("No")
+elif(b>=(a+c)):
+    print("No")
+elif(c>=(a+b)):
+    print("No")
+else:
+    print("Yes")
+print("\n")
