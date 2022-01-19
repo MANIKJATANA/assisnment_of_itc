@@ -5,7 +5,7 @@ print("A    The length of string is             ",len(s1))
 print("B    The reversed string is              ",s1[-1::-1])
 # STORED a case sensitive IN A NEW STRING #c
 s2=s1[10:26] 
-#REPLACED "a csae sensitive" with "object oriented"  #D
+#REPLACED "a case sensitive" with "object oriented"  #D
 s2.replace("a case sensitive","object oriented")  
 print("E    index of a is                       ",s1.find('a'))
 print("F    string after removing whitespaces   ",s1.replace(" ",""))
