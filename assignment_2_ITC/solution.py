@@ -13,12 +13,11 @@ print("\n \n \n")
 
 
 
-#QUESTION 2
 print("QUESTION 2")
 name=input("ENTER YOUR name                 ")
-SID=input("ENTER YOUR SID                  ")
+SID=int (input("ENTER YOUR SID                  "))
 department=input("ENTER YOUR department           ")
-CGPA=input("ENTER YOUR CGPA                 ")
+CGPA=float(input("ENTER YOUR CGPA                 "))
 print("Hey %s,"%name,"Here!")
 print("My SID is %d" %SID)
 print("I am from %s"%department,"and my CGPA is %f"%CGPA)
