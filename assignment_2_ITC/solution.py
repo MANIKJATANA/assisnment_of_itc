@@ -6,7 +6,7 @@ print("B    The reversed string is              ",s1[-1::-1])
 # STORED a case sensitive IN A NEW STRING #c
 s2=s1[10:26] 
 #REPLACED "a csae sensitive" with "object oriented"  #D
-s2="Object Oriented" 
+s2.replace("a case sensitive","object oriented")  
 print("E    index of a is                       ",s1.find('a'))
 print("F    string after removing whitespaces   ",s1.replace(" ",""))
 print("\n \n \n")
@@ -19,9 +19,9 @@ name=input("ENTER YOUR name                 ")
 SID=input("ENTER YOUR SID                  ")
 department=input("ENTER YOUR department           ")
 CGPA=input("ENTER YOUR CGPA                 ")
-print("Hey,",name,"Here!")
-print("My SID is ",SID)
-print("I am from ",department,"and my CGPA is ",CGPA)
+print("Hey %s,"%name,"Here!")
+print("My SID is %d" %SID)
+print("I am from %s"%department,"and my CGPA is %f"%CGPA)
 print("\n \n \n")
 
 
