@@ -1,4 +1,3 @@
-# QUESTION 1
 print("QUESTION 1")
 s1="Python is a case sensitive language"
 print("A    The length of string is             ",len(s1)) 
@@ -13,7 +12,6 @@ print("\n \n \n")
 
 
 
-print("QUESTION 2")
 name=input("ENTER YOUR name                 ")
 SID=int (input("ENTER YOUR SID                  "))
 department=input("ENTER YOUR department           ")
@@ -25,7 +23,6 @@ print("\n \n \n")
 
 
 
-#QUESTION 3
 print("QUESTION 3")
 a=56
 b=10
@@ -40,7 +37,7 @@ print("E    Right shift b with 4 bits \n            ",b>>4)
 print("\n \n \n")
 
 
-#QUESTION 4
+
 print("QUESTION 4")
 n1 = int(input("Enter first number:         "))
 n2 = int(input("Enter second number:        "))
@@ -57,26 +54,29 @@ print("THE LARGEST NUMBER IS        ",largest)
 print("\n \n \n")
 
 
-#QUESTION 5
+
 print("QUESTION 5")
 s=input("Enter the string ")
+#checking whether name exist or not 
 if (s.find('name') != -1):
     print ("Yes")
 else:
     print ("No")
 print("\n  \n \n")
 
-#QUESTION 6
+
 print("QUESTION 6")
+#taking input of sides of triangle a , b , c
 a=int(input("Enter  first side of triangle "))
 b=int(input("Enter  second side of triangle "))
 c=int(input("Enter  third side of triangle "))
+#condition for triangle
 if(a>=(b+c)):
     print("No")
 elif(b>=(a+c)):
     print("No")
 elif(c>=(a+b)):
     print("No")
-else:
+elif(a>0 and b>0 and c>0)
     print("Yes")
-print("\n")
+
