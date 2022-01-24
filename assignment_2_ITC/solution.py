@@ -77,6 +77,6 @@ elif(b>=(a+c)):
     print("No")
 elif(c>=(a+b)):
     print("No")
-elif(a>0 and b>0 and c>0)
+elif(a>0 and b>0 and c>0):
     print("Yes")
 
