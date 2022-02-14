@@ -228,13 +228,12 @@ while(program_flow):
         elif str.lower()!="y" :
             print("\nPlease enter Y or N only!!!\n")
     
-# a. Print students details stored in the dictionary.
-
+# a. Printing the details of  students  stored in the dictionary.
 print("\nStudent data in the order as entered by the user : ")
 for student_sid , student_name in user_data.items() :
     print(student_sid," : ",student_name)
 
-# b. Sort dictionary using student names.
+# b.  Sorting the  dictionary by  name.
 sorted_names = sorted(user_data.values())
 new_user_data ={}
 for student_name in sorted_names:
@@ -246,8 +245,7 @@ print("\nSorted dictionary according to student names :")
 for student_sid ,student_name  in new_user_data.items() :
     print("{:<15}:{:<15}".format(student_sid,student_name))
 
-# c. Sort dictionary using student sids.
-
+# c. Sorting the  dictionary by  sids.
 sorted_sids = sorted(user_data.keys())
 new_user_data ={}
 for student_sids in sorted_sids:
@@ -301,38 +299,33 @@ print("\n")
 
 
 # Question 8.
-# Given the sets below, write python statement to:
-# Set1= {1, 2, 3, 4, 5}
-# Set2= {2, 4, 6, 8}
-# Set3= {1, 5, 9, 13, 17}
 print("Question 8 :  Set methods -  union , intersection , difference .")
-
 #given sets are 
 Set1= {1, 2, 3, 4, 5}
 Set2= {2, 4, 6, 8}
 Set3= {1, 5, 9, 13, 17}
 
 
-# a. new set containing elements from set 1 and set 2 both but not the common one 
+# a.set containing elements from set 1 and set 2 both but not the common one 
 new_set = Set1.union(Set2) - Set1.intersection(Set2)
 print("set of all elements that are in Set1 and Set2 but not both : ", new_set)
 
-# b.  new set of all elements that are in only one of the three sets Set1, Set2 and Set3.
 
+# b. set of all elements that are in only one of the three sets Set1, Set2 and Set3.
 unique_element_set = Set1.union(Set2.union(Set3)) - Set1.intersection(Set2) - Set2.intersection(Set3) - Set3.intersection(Set1)
 print("set of all elements that are in only one of the three above  sets : ",unique_element_set)
 
-# c.new set of elements that are exactly two of the sets Set1, Set2 and Set3.  
 
+# c.new set of elements that are exactly two of the sets Set1, Set2 and Set3.  
 exactly_two = ((Set1.intersection(Set2)).union((Set1.intersection(Set3)).union(Set2.intersection(Set3))))-(Set1.intersection(Set2.intersection(Set3)))
 print("set of elements that are exactly two of the sets : ",exactly_two)
 
-# d.set of all integers in the range 1 to 10 that are not in Set1.
 
+# d.set of all integers in the range 1 to 10 that are not in Set1.
 set_of_integers = set(x for x in range(1,11)) - Set1
 print("\nNew set of all integers in the range 1 to 10 that are not in Set1 :", set_of_integers)
 
-# e. Create a new set of all integers in the range 1 to 10 that are not in Set1,Set2 and Set3.
 
+# e.set of all integers in the range 1 to 10 that are not in Set1,Set2 and Set3.
 set_new = set(x for x in range(1,11)) - (Set1|Set2|Set3)
 print("\nNew set of all integers in the range 1 to 10 that are not in Set1,Set2 and Set3:",set_new)
