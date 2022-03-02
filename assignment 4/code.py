@@ -49,19 +49,39 @@ print("\n")
 
 
 
-print(" with the help of loops ")
+print(" with the help of  for loop ")
 for i in range(n):
     for spacing  in range(n-i+1):
         # for spacing
-        print(end="  ")
+        print(end=" ")
     for j in range(i+1):
         # by using the formula of   nCr = n!/((n-r)!*r!
-        print(factorial(i)//(factorial(j)*factorial(i-j)), end="    ")
+        print(factorial(i)//(factorial(j)*factorial(i-j)), end=" ")
     # for new line
     print()
 
 print("\n")
 print("\n")
+
+print(" with the help of  while loop ")
+
+i=0
+while(i<n):
+    z=n-i+1
+    while(z>0):
+        print(end=" ")
+        z-=1
+    y=0
+    while(y<i+1):
+        print(factorial(i) // (factorial(y) * factorial(i - y)), end=" ")
+        y+=1
+    i+=1
+    print()
+
+print("\n")
+print("\n")
+
+
 
 #QUESTION 3
 print("QUESTION 3")
@@ -137,9 +157,11 @@ class Student:
 
 
 p1=Student("MANIK JATANA ",21103071)
+print("object has been created  with name and rollnum as below ")
 print(p1.name)
 print(p1.rollnum)
 
+del p1
 print("\n")
 print("\n")
 
@@ -168,34 +190,25 @@ print("\n")
 print("\n")
 
 
-#QUESTION 6
-print("QUESTION 6 ")
-def anagram(word):
-    if len(word)==1:
-        return [word]
-    partial_words=anagram(word[1:])
-    char=word[0]
-    result=[]
-    for perm in partial_words:
-        for i in range(len(perm)+1):
-            result.append(perm[:i]+char+perm[i:])
-    return result        
+print("\nQuestion 6. To check if friendship is true or not .\n")
+george_word = input("Enter your word George :")
+barbie_word = input("Enter your word Barbie and remember it must be consistig of same words as George word letters only :  ")
 
-
-George_word=input("Please give a word  ")
-George_word=George_word.lower()
-Possible_words=anagram(George_word)
-
-
-Barbie_word=input("Give a word-  ")
-Barbue_word=Barbie_word.lower()
-
-print("Possible Words-",Possible_words)
-
-# If Barbie's word lies in the list,then their friendship is real.
-
-if Barbie_word in Possible_words:
-    print("Friendship is real.")
+if len(george_word)==len(barbie_word):
+    friendship=False
+    for letter in george_word.lower():
+        if letter not in barbie_word.lower():
+            print("\nBarbie's word  deos not contain same  letters as George's word .")
+            print("  FAKE FRIENDSHIP ")
+            break
+        else:
+            friendship=True
+    if friendship:
+        print("\nBarbie your word  contains same  letters as George's word .")
+        print(" TRUE FRIENDSHIP  ")
+        
+        
 else:
-    print("Friendship is fake.")
-    
+    print("\nBarbie's word  deos not contain same  letters as George's word .")
+    print("   FAKE FRIENDSHIP ")
+
